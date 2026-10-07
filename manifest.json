@@ -1,0 +1,19 @@
+{
+  "manifest_version": 3,
+  "name": "Lichess chess.com-style shapes",
+  "version": "1.0.0",
+  "description": "Draws Lichess arrows (including L-shaped knight arrows) and square highlights in the chess.com style.",
+  "content_scripts": [
+    {
+      "matches": ["https://lichess.org/*", "https://*.lichess.org/*", "https://lichess.dev/*"],
+      "js": ["content.js"],
+      "css": ["content.css"],
+      "run_at": "document_idle"
+    }
+  ],
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  }
+}

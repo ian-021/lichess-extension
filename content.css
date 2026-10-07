@@ -1,0 +1,5 @@
+/* Lichess dims the whole shapes layer to 0.6. chess.com draws shapes at 0.8, so we
+   restore the layer to full opacity and set opacity per shape in content.js. */
+cg-container .cg-shapes {
+  opacity: 1 !important;
+}
